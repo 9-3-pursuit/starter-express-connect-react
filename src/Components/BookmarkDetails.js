@@ -13,8 +13,9 @@ function BookmarkDetails() {
       .then((response) => {
         console.log(response);
         setBookmark(response.data);
-      }).catch(()=>{
-        navigate("/not-found")
+      })
+      .catch(() => {
+        navigate("/not-found");
       });
   }, [index, navigate]);
   const handleDelete = () => {};
